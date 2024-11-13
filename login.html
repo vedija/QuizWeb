@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizWitz - Login</title>
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- <img src="logo.jpeg" alt="QuizWitz Logo" class="logo"> -->
+            <h2>QuizWitz</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required/>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
