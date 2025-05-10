@@ -15,7 +15,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "ch@shmish2006",
+    password: "bangtan@4545",
     database: "quizwitz"
 });
 
@@ -49,7 +49,7 @@ app.post("/login", (req, res) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
 
 // Endpoint to fetch available subjects
 app.get("/subjects", (req, res) => {
