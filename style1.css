@@ -23,7 +23,7 @@ body{
     padding: 30px;
     /*overflow: hidden;*/
     border-radius: 10px;
-    box-shadow: o 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow:black;
 }
 .heading{
     text-align: center;

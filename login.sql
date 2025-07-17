@@ -10,3 +10,4 @@ CREATE TABLE IF NOT EXISTS users (
     last_login DATETIME,  -- Optional: for storing the last login time
     UNIQUE(username)
 );
+

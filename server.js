@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const path = require('path');
 const mysql = require("mysql2");
@@ -18,6 +19,8 @@ const db = mysql.createConnection({
     password: "ch@shmish2006",
     database: "quizwitz"
 });
+
+
 
 db.connect((err) => {
     if (err) throw err;
@@ -58,3 +61,4 @@ app.get("/subjects", (req, res) => {
         res.json(results);
     });
 });
+
