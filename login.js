@@ -24,7 +24,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   .then(data => {
       alert("Data processed");
       if (data.success) {
-          window.location.href = 'index.html';
+          window.location.href = 'quiz.html';
       } else {
           alert(data.message || 'Login failed');
       }
