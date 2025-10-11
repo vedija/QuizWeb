@@ -1,97 +1,39 @@
-<!-- 1 -->
+<!-- 2 login page-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizWitz Homepage</title>
-    <link rel="stylesheet" href="home.css">
+    <title>QuizWitz - Login</title>
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
-
 <body>
-    <header>
-        <div class="logo">QuizWitz</div>
-        <div class="header-buttons">
-            <button class="sign-up"><a href="login.html" style="color:aliceblue; text-decoration: none;">Login</a></button> <!--login page src-->
-            
+    <div class="login-container">
+        <div class="login-card">
+            <!-- <img src="logo.jpeg" alt="QuizWitz Logo" class="logo"> -->
+            <h2>QuizWitz</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required/>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
         </div>
-    </header>
-
-    <main>
-        <section class="intro">
-            <h1>Introducing <span>Online Quiz Website</span></h1>
-            <blockquote>“I had no idea QuizWitz could do that.”</blockquote><br>
-            <p>- Almost everybody</p><br>
-            <p>Create and deliver bell-to-bell curriculum resources that meet the needs of every student.</p><br>
-            <div class="intro-buttons">
-                <button><a href="login.html" style="color:aliceblue; text-decoration: none;">Get Started</a></button><!--login page src-->
-            </div>
-        </section>
-
-        <section class="steps">
-            <div class="card">
-                <div class="p1">
-                    <p>In today's digital era, educational platforms are widely used to support both formal and informal
-                        learning processes. However, many existing quiz platforms face limitations in terms of
-                        accessibility, customization, and ease of use, particularly for users who seek a personalized
-                        learning experience with subject-specific assessments.</p>
-                </div>
-                <div class="step">
-                    <h2>01</h2>
-                    <p>Adapt anything in your curriculum with an assist from quizes when you want it.</p>
-                </div>
-
-
-            </div>
-            <div class="card">
-                <div class="step">
-                    <h2>02</h2>
-                    <p>Get results. Witness joy. Repeat.</p>
-                </div>
-                <div class="p1">
-                    <p>Traditional systems often lack flexibility in question management, randomization, and user
-                        engagement, limiting their effectiveness for targeted learning and testing.To address these
-                        issues, a new system named QuizWitz has been conceptualized. QuizWitz is designed to provide a
-                        responsive, user-friendly interface for interactive subject-based quizzes.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="p1">
-                    <p>The need for this system arises from the demand for a versatile and accessible quiz platform that
-                        caters to diverse subjects while providing instant feedback and progress tracking. By storing
-                        questions in a structured MySQL database and using Node.js for the backend, QuizWitz allows for
-                        a scalable, efficient management of question sets and user data.
-                    </p>
-                </div>
-                <div class="step">
-                    <h2>03</h2>
-                    <p>Deliver differentiated instruction that's as unique as your students.</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <div class="step">
-                    <h2>04</h2>
-                    <p>Grow your knowledge!!!</p>
-                </div>
-                <div class="p1">
-                    <p> This enhanced structure ensures that students have a smooth and engaging experience, promoting
-                        continuous learning and assessment. QuizWitz is designed to provide a responsive, user-friendly
-                        interface for interactive subject-based quizzes.Traditional systems often lack flexibility in question management, randomization, and user engagement, limiting their effectiveness for targeted learning and testing.
-                    </p>
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Quizizz Inc.</p>
-    </footer>
+    </div>
+    <script src="home.js"></script>
 </body>
-
 </html>
